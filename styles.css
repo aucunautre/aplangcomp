@@ -1,0 +1,170 @@
+:root {
+  --green: #c1f1a1ff;
+  --pink: #fcb0b6ff;
+  --orange: #ff9122ff;
+  --blue: #47bcd5ff;
+}
+
+@font-face {
+  font-family: Squid;
+  src: url("./fonts/game-of-squids.otf");
+}
+@font-face {
+  font-family: Squid;
+  font-weight: bold;
+  src: url("./fonts/game-of-squids.otf");
+}
+
+body {
+  background: black;
+}
+
+* {
+  color: white;
+  font-family: Nunito, sans-serif;
+}
+form#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5% 20px;
+  margin: 20px auto;
+  gap: 20px;
+}
+#progress {
+  width: 90%;
+  height: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid var(--blue);
+}
+#progress-bar {
+  height: 20px;
+  background-color: var(--blue);
+  border-radius: 10px;
+}
+input {
+  margin: 5px;
+  color: white;
+  background: unset;
+  outline: none;
+  box-shadow: unset;
+  border: unset;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  max-width: 75px;
+  text-align: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 10% 0 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: Squid, sans-serif;
+  text-align: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h2#demo {
+  font-family: Nunito, sans-serif;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-games {
+  padding: 5% 0;
+}
+.btn {
+  padding: 5px 10px;
+  font-size: 15px;
+  background-color: var(--orange);
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--pink);
+  transition: all 0.3s;
+  gap: 30px;
+}
+.btn::after {
+  content: url("./assets/bx-joystick.svg");
+  height: 24px;
+  width: 24px;
+}
+button.btn {
+  margin: 0 auto;
+  color: black;
+  background-color: var(--green);
+  font-size: 20px;
+  cursor: pointer;
+}
+button.btn.clear {
+  background-color: red;
+  color: white;
+}
+.hide {
+  display: none;
+}
+button.btn::after {
+  content: url("./assets/bxs-hourglass.svg");
+  height: 24px;
+  width: 24px;
+}
+button.btn.clear::after {
+  content: none;
+}
+#countdown div {
+  max-width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: centerer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin: 30px 0;
+  padding: 5% 20px;
+}
+
+footer .legal-stuff {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}

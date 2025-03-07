@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <title>The Argument & Rhetoric Games</title>
+</head>
+
+<body>
+    <section class="heading">
+        <div class="titles">
+            <h1>Mrs. Schultz's AP Lang &amp; Comp Class</h1>
+            <h2>The Argument & Rhetoric Games</h2>
+        </div>
+        <div class="instructions">
+            <p>Timer Instructions:</p>
+            <ol>
+                <li>120 seconds (2 minutes) for research & prep.</li>
+                <li>120 seconds for debate.</li>
+                <li>60 seconds for rebuttal.</li>
+                <li>60 seconds for conclusion.</li>
+                <li>Have fun!</li>
+            </ol>
+            <div class="link-games"><a href="#" target="_blank" class="btn">Link to Games</a></div>
+        </div>
+
+
+    </section>
+    <section class="clock">
+        <form id="countdown">
+            <div class="hrs"><input type="text" name="fname" value="" placeholder="00" requires>Mins
+            </div>
+            <div class="mins"><input type="text" name="lname" value="" placeholder="00" required>Secs
+            </div>
+        </form>
+        <div class="controls">
+            <button class="btn timer" onclick="startTimer()">Start Timer</button>
+            <button class="btn clear hide" onclick="clearTimer()">Clear</button>
+        </div>
+
+
+        <div id="progress">
+            <div id="progress-bar"></div>
+        </div>
+
+        <!--button onclick="timer()">START</button-->
+        <h2 id="demo"></h2>
+    </section>
+
+    <footer>
+        <div>
+            Developed with ♥️ for Mrs. Schultz's AP Lang & Comp students
+        </div>
+        <div class="legal-stuff">
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms & Conditions</a></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
